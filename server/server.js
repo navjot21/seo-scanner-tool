@@ -11,6 +11,7 @@ app.use(cors({
     "http://localhost:5173",
     "https://seo-scanner-tool.vercel.app",
     "https://seotool4u.in",
+    "https://www.seotool4u.in"
   ],
 }));
 app.use(express.json());
