@@ -6,7 +6,13 @@ const pdfRoutes = require("./routes/pdfRoutes");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://seo-scanner-tool.vercel.app",
+    "https://seotool4u.in",
+  ],
+}));
 app.use(express.json());
 
 app.use("/api", scanRoutes);
